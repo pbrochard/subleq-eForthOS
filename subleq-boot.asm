@@ -167,6 +167,5 @@ data:
     times 32768-($-$$) db 0
 
 translate_char:
-    ;; Uncomment for an FR keyboard (azerty)
-    ;; %include "./keyb-FR.asm"
+    %include "./key-translation.asm"
     ret

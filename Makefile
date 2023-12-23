@@ -6,6 +6,15 @@ eforth-dec.asm: eforth.dec
 	echo "dw \\" > eforth-dec.asm
 	sed 's/$$/, \\/' eforth.dec >> eforth-dec.asm
 
+embed/eforth-embed:
+	cd embed; make
+
+keyb-EN:
+	echo "" > key-translation.asm
+
+keyb-FR: embed/eforth-embed
+	cat FR-mapping.fs | ./embed/eforth-embed | awk '!/.*ok/ {print $0}' | tee ./key-translation.asm
+
 build: subleq-boot.asm eforth-dec.asm
 	nasm -f bin subleq-boot.asm -o boot.com
 	dd status=noxfer conv=notrunc if=boot.com of=subleq-boot.flp
