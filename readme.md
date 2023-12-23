@@ -1,5 +1,16 @@
 # Bootable 16-bit SUBLEQ eForth
 
+A bootable version of [subleq eForth](https://github.com/howerj/subleq).
+
+For more information
+see:
+
+* <https://esolangs.org/wiki/Subleq>
+* <https://github.com/howerj/subleq>
+* <https://en.wikipedia.org/wiki/One-instruction_set_computer>
+
+### Building
+
 Type `make` to build and run this version with qemu.  
 `qemu-system-i386` need to be installed.
 
