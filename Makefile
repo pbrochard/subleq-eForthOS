@@ -13,7 +13,7 @@ keyb-EN:
 	echo "" > key-translation.asm
 
 keyb-FR: embed/eforth-embed
-	cat FR-mapping.fs | ./embed/eforth-embed | awk '!/.*ok/ {print $0}' | tee ./key-translation.asm
+	cat mapping.fs  mapping-FR.fs | ./embed/eforth-embed | awk '!/.*ok/ {print $0}' | tee ./key-translation.asm
 
 key-translation.asm:
 	make keyb-EN
