@@ -1,5 +1,5 @@
-embed/subleq-dec.c
-embed/subleq-embed
+embed/eforth-dec.c
+embed/eforth-embed
 
 boot.com
 subleq-boot.flp
