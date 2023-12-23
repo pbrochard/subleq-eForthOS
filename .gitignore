@@ -1,6 +1,7 @@
-embed/eforth-dec.c
-embed/eforth-embed
-
 boot.com
 subleq-boot.flp
 eforth-dec.asm
+key-translation.asm
+
+embed/eforth-dec.c
+embed/eforth-embed

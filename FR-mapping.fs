@@ -3,7 +3,7 @@ variable quote char ' quote !
 
 : label ." .not_" cnt @ s>d <# #s #> type ;
 : .quoted quote @ emit emit quote @ emit ;
-: .mapped ." .mapped" cr ;
+: .mapped ." .mapped:" cr ;
 
 
 : map
