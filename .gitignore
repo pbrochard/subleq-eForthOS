@@ -1,0 +1,6 @@
+embed/subleq-dec.c
+embed/subleq-embed
+
+boot.com
+subleq-boot.flp
+eforth-dec.asm
