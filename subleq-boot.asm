@@ -162,9 +162,9 @@ getchar:                        ; get char in al
 ;;; more than 512 bytes program                    ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 data:
-    ;;%include "./simple-dec.asm"
-    ;;%include "./test-3rd-dec.asm"
-    ;;%include "./hello-world-dec.asm"
+    ;;%include "./test/simple-dec.asm"
+    ;;%include "./test/test-3rd-dec.asm"
+    ;;%include "./test/hello-world-dec.asm"
     %include "./eforth-dec.asm"
 
     ;; amount of zeros = 512 + (number of sectors read * 512)
