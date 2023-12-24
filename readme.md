@@ -53,7 +53,7 @@ make floppy
 sudo cp subleq-boot.flp /boot/
 ```
 
-- Reboot!
+- Reboot...
 
 - Enjoy the poetry!
 
