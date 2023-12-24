@@ -35,3 +35,4 @@ floppy: build
 
 clean:
 	rm -f boot.com subleq-boot.flp eforth-dec.asm key-translation.asm
+	cd embed; make clean
