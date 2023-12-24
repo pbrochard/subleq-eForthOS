@@ -25,6 +25,10 @@
     cmp al, 65
     jne exit
 
+	mov ah, 0x00
+	mov al, 0x02
+	int 0x10
+
     call cls
 
     mov dx, 0x0000
