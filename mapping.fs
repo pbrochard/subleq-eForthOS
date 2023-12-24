@@ -3,8 +3,6 @@ variable quote char ' quote !
 
 : label ." .not_" cnt @ s>d <# #s #> type ;
 : .quoted quote @ emit emit quote @ emit ;
-: .mapped ." .mapped:" cr ;
-
 
 : map
    swap
@@ -16,3 +14,6 @@ variable quote char ' quote !
    label ." :" cr
    cr
 ;
+
+: | char ;
+: => char map ;

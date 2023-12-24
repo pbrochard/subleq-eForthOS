@@ -168,4 +168,5 @@ data:
 
 translate_char:
     %include "./key-translation.asm"
+ .mapped:
     ret
