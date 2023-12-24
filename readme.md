@@ -55,4 +55,6 @@ sudo cp subleq-boot.flp /boot/
 
 - Reboot!
 
+- Enjoy the poetry!
+
 *Note: you may have to disable the uefi boot and fallback to legacy boot to avoid graphical problems*
