@@ -4,7 +4,7 @@ variable quote char ' quote !
 : label ." .not_" cnt @ s>d <# #s #> type ;
 : .quoted quote @ emit emit quote @ emit ;
 
-: map
+: map ( c-from c-to -- )
    swap
    cnt @ 1+ cnt !
    ."     cmp al, " .quoted cr
